@@ -74,7 +74,7 @@ flowchart LR
 | DI & networking | Koin, Ktor client |
 | Auth | Credential Manager + Google Sign-In, JWT sessions |
 | Backend | Cloudflare Workers, D1, R2, TypeScript |
-| Build | Kotlin 2.4, AGP 9.4, compileSdk 37, minSdk 26, R8 signed releases |
+| Build & CI | Kotlin 2.4, AGP 9.4, compileSdk 37, minSdk 26, R8 signed releases, GitHub Actions |
 
 ## 💡 Engineering decisions
 - **Barcode as the primary key.** The same product means the same item everywhere.
@@ -82,6 +82,7 @@ flowchart LR
 - **Append-only price history.** Every price is a dated observation, which keeps comparisons honest.
 - **Additive sync.** The phone stays the source of truth, and sync never deletes local data.
 - **Tested migrations.** Every Room schema change ships with a migration test.
+- **Continuous integration.** GitHub Actions runs the unit tests and a debug build on every push and pull request, and type-checks the sync API. No secrets are needed, because a fresh clone builds with every remote feature switched off.
 
 ---
 

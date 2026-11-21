@@ -50,7 +50,7 @@ All copy and prices live in **typed TypeScript modules**, not in the components,
 | Language | TypeScript (strict) |
 | Styling | Tailwind CSS v4 with CSS-first design tokens |
 | Motion | GSAP, Lenis smooth scroll, OGL shaders |
-| Testing | Vitest: **307 tests across 21 files** |
+| Testing & CI | Vitest: **307 tests across 21 files**. GitHub Actions runs lint, tests and a production build on every push and pull request. |
 | Hosting | Cloudflare Workers static assets (Wrangler), with the previous Cloudflare Pages site kept as rollback |
 | Assets | Supabase storage |
 

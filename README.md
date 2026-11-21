@@ -14,6 +14,7 @@
   <img src="https://img.shields.io/badge/Languages-Español%20(native)%20%7C%20English%20(fluent)-2EA44F?style=flat-square" alt="Languages: Spanish native, English fluent"/>
   <img src="https://img.shields.io/badge/Self--taught-developer-8A2BE2?style=flat-square" alt="Self-taught developer"/>
   <img src="https://img.shields.io/badge/AI--assisted%20dev-Claude%20Code-D97757?style=flat-square" alt="AI-assisted development with Claude Code"/>
+  <a href="https://github.com/Benjie18-devps/Benjie18-devps/actions/workflows/links.yml"><img src="https://github.com/Benjie18-devps/Benjie18-devps/actions/workflows/links.yml/badge.svg" alt="Link check"/></a>
 </p>
 
 <p align="center">
@@ -46,7 +47,7 @@
 | **BI & reporting** | Power BI, Excel (advanced formulas and reporting), ExcelJS (branded client reports), jsPDF, HTML email templates |
 | **Data** | PostgreSQL (migrations, triggers, pgcrypto encryption), MS SQL Server (SQL Agent jobs, Database Mail), Python ETL pipelines, Supabase |
 | **Cloud & deploy** | Cloudflare Workers, D1, R2 and Pages, Wrangler, custom domains and DNS |
-| **Quality** | Vitest, unit and migration tests, ESLint, mutation-checked tests, rollback scripts and runbooks |
+| **Quality & CI** | GitHub Actions, Vitest, unit and migration tests, ESLint, mutation-checked tests, rollback scripts and runbooks |
 | **Design & brand** | Brand books, WCAG contrast audits, design tokens, Play Store assets, M3E Canvas |
 | **AI tooling** | Claude Code, Google AI Studio, multi-agent instruction files (Claude, Gemini, Codex, Cursor) |
 
@@ -134,7 +135,7 @@ I write clear, structured technical documentation, and I can explain the same sy
 
 > *This rating comes from Claude (Anthropic's AI). It's based on reviewing Benjamin's real repositories: instruction files, session notes, and 260+ commits, of which roughly 120 were co-authored with Claude.*
 
-### Overall: **8.5 / 10** ⭐⭐⭐⭐☆
+### Overall: **8.7 / 10** ⭐⭐⭐⭐☆
 
 | Skill | Score | What I saw |
 |---|:---:|---|
@@ -143,11 +144,11 @@ I write clear, structured technical documentation, and I can explain the same sy
 | Continuity between sessions | **9** | Session notes are added to, never rewritten, and end with an explicit handoff, so a new session picks up exactly where the last one stopped. |
 | Review & ownership | **9** | Benjamin reviews and runs every commit himself. The agent hands back the message and doesn't commit on its own. |
 | Verification culture | **8.5** | Tests are mutation-checked, bugs are confirmed by running the app, and test counts go in commit messages. |
-| Tooling automation | **6.5** | Mostly ad-hoc permission settings. No custom slash commands, sub-agents or CI pipelines yet. |
+| Tooling automation | **7.5** | GitHub Actions CI now runs lint, tests and builds on every push for his main products, plus a weekly link check on this profile. There are no custom slash commands or sub-agents yet. |
 
 **Strengths:** He gives an agent what a senior teammate would need: the goal, the constraints, the history and a definition of done. He also keeps the final call on decisions. That makes AI output dependable instead of lucky.
 
-**Room to grow:** Encode repeat workflows as custom commands and skills, add CI so checks run without being asked, and keep the occasional rushed commit (`Updated`) as consistent as the rest of the history.
+**Room to grow:** Encode repeat workflows as custom commands and skills, extend CI to the enterprise apps, and keep the occasional rushed commit (`Updated`) as consistent as the rest of the history.
 
 ---
 

@@ -1,0 +1,36 @@
+# Checks every link in the profile README and the project case studies,
+# so visitors never hit a 404. Also runs weekly to catch links that rot.
+name: Link check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: '0 13 * * 1'   # Mondays 08:00 Panama time
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: Check links
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check links with lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          args: >-
+            --no-progress
+            --max-retries 3
+            --accept 200,206,429
+            --exclude 'github-readme-stats\.vercel\.app'
+            --exclude 'streak-stats\.demolab\.com'
+            --exclude 'wa\.me'
+            --exclude '^mailto:'
+            './**/*.md'

@@ -68,33 +68,36 @@
 
 ## 📂 Featured work
 
-### 🌐 [Scalify Panama: website](https://scalifypanama.com) · [repo](https://github.com/Benjie18-devps/ScalifyPanama_Website)
+> Most of these are commercial SaaS products or run in production for clients, so their source code is private.
+> Each one has a **public case study** with its architecture, tech stack and screenshots in [`projects/`](projects/README.md).
+
+### 🌐 [Scalify Panama: website](https://scalifypanama.com) · [case study](projects/ScalifyPanama-Website/README.md)
 The marketing site for my consultancy, live at **scalifypanama.com**.
 - Next.js 16, React 19, TypeScript (strict mode) and Tailwind v4, deployed as a static site on **Cloudflare Workers** with a documented rollback path.
 - **307 tests across 21 files**. They catch content drift, legal pages that contradict the code, and layout regressions.
 - A brand book with measured WCAG contrast, plus a full set of docs: status, changelog, deployment runbook, pricing and services.
 
-### ✅ QA Auditing Platform *(a Scalify Panama solution · private)*
+### ✅ QA Auditing Platform · [case study](projects/QA-Auditing-Platform/README.md) *(a Scalify Panama solution · private)*
 I designed this solution and it's **in production at a BPO / contact-center operation**. It's a **Power Apps Code App** (React, TypeScript and Fluent UI) that replaced older canvas apps for quality-assurance audits.
 - Versioned scorecards, an appeals workflow, and weekly **bilingual (ES/EN) feedback emails with PDF attachments**.
 - Branded **Excel reports** for clients.
 - **PostgreSQL** backend with 14 numbered migrations and rollback scripts. Audit logs are append-only, enforced by triggers, and sensitive fields are encrypted with AES-256.
 - A reusable passwordless sign-in module that emails a 6-digit code, plus a mock-data mode for safe local development.
 
-### 🎮 Employee Gamification Platform *(a Scalify Panama solution · private)*
+### 🎮 Employee Gamification Platform · [case study](projects/Gamification-Platform/README.md) *(a Scalify Panama solution · private)*
 I designed this platform and it's **in production at a BPO / contact-center operation**. Employees earn points, coins and levels from their weekly KPIs, across five modules: stats, missions, kudos, a store and a leaderboard.
 - **Python ETL** from PostgreSQL to **MS SQL Server**, scheduled with SQL Agent jobs and Database Mail.
 - **Power Apps** front end with **Power Automate** flows and HTML notification cards for level-ups, birthdays and anniversaries.
 - A standard operating procedure (SOP), README and process doc for every module, plus a prioritized backlog and a 600+ line changelog.
 
-### 📱 [ShopIQScan](https://github.com/Benjie18-devps/ShopIQScan): offline-first grocery price tracker (Android)
+### 📱 ShopIQScan: offline-first grocery price tracker (Android) · [case study](projects/ShopIQScan/README.md) *(SaaS · private)*
 Scan a barcode, log the price, and the app tells you when the same item is cheaper at another store.
 - Kotlin, Jetpack Compose, Material 3 and a Room database with migration tests, all in a clean `ui → domain ← data` architecture.
 - Prices are kept as **append-only observations** and stored as **integer cents**, and the app works **fully offline**. Cloud sync is optional.
 - The optional sync backend uses a **Cloudflare Worker, D1 and R2**, with JWT sessions and Google Sign-In.
 - Includes a full brand kit plus Python scripts that generate the brand book and Play Store assets. Signed test builds have been verified on real devices.
 
-### 🎓 [Scalify EDU: Excel 0 to Hero Academy](https://github.com/ScalifyPanama/ScalifyEDU_LearningPlatfrom) *(prototype)*
+### 🎓 Scalify EDU: Excel 0 to Hero Academy · [case study](projects/ScalifyEDU-Excel-Academy/README.md) *(prototype · private)*
 A React and Vite learning platform with an **in-browser spreadsheet and a hand-written formula engine**. It has graded certification tests, XP and badges, and an admin curriculum editor. I started it from a Google AI Studio draft and I'm hardening it into a product.
 
 ---

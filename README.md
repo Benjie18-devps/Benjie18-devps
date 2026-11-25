@@ -155,12 +155,9 @@ I write clear, structured technical documentation, and I can explain the same sy
 ## 📊 GitHub stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Benjie18-devps&show_icons=true&count_private=true&hide_border=true" height="165" alt="GitHub stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Benjie18-devps&layout=compact&hide_border=true" height="165" alt="Top languages"/>
+  <img src="metrics.svg" alt="GitHub activity, languages and contribution calendar (includes private work)"/>
 </p>
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Benjie18-devps&hide_border=true" alt="GitHub streak"/>
-</p>
+<p align="center"><sub>Updated daily by a GitHub Action. Most of my work lives in private repos, so this counts private commits and languages without showing the repos.</sub></p>
 
 ---
 

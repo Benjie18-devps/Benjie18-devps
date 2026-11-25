@@ -29,8 +29,7 @@ jobs:
             --no-progress
             --max-retries 3
             --accept 200,206,429
-            --exclude 'github-readme-stats\.vercel\.app'
-            --exclude 'streak-stats\.demolab\.com'
+            --exclude 'metrics\.svg'
             --exclude 'wa\.me'
             --exclude '^mailto:'
             './**/*.md'

@@ -1,6 +1,7 @@
 # Builds the "GitHub stats" image in the profile README and commits it as metrics.svg.
 # It runs with a personal access token (METRICS_TOKEN secret), so commits and
 # languages from private repos are counted without exposing the repos themselves.
+# To refresh by hand: Actions -> "Metrics" (not "Link check") -> Run workflow.
 name: Metrics
 
 on:
